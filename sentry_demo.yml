@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: sentry.example.com
+ labels:
+  app: sentrydemo
+spec:
+ containers:
+ - name: sentry-demo
+   image: arun05/sentry-demo
+   ports:
+   - containerPort: 4000
